@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    overflow: hidden; /* はみ出し防止 */
+}
+
+.leaf {
+    position: absolute;
+    top: -50px; /* 画面上から落ち始める */
+    width: 40px;
+    animation: fall 8s linear infinite;
+}
+
+/* 落下アニメーション */
+@keyframes fall {
+    0% {
+        transform: translateX(0) rotate(0deg);
+        top: -50px;
+    }
+    50% {
+        transform: translateX(100px) rotate(180deg);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg);
+        top: 100vh;
+    }
+}
+
+/* それぞれの葉っぱにランダム性を追加 */
+.leaf:nth-child(1) { left: 10%; animation-delay: 0s; }
+.leaf:nth-child(2) { left: 30%; animation-delay: 2s; }
+.leaf:nth-child(3) { left: 50%; animation-delay: 4s; }
+.leaf:nth-child(4) { left: 70%; animation-delay: 1s; }
+.leaf:nth-child(5) { left: 90%; animation-delay: 3s; }
