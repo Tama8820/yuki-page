@@ -1,12 +1,61 @@
 <html>
 <head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+
 <style>
+
+header {
+    background-color: #4CAF50; /* グリーン */
+    padding: 10px 20px;
+}
+
+/* ヘッダーの文字 */
+header h1 {
+    margin: 0;
+    font-family: 'Mochiy Pop One', sans-serif; /* 可愛いフォント */
+    color: white;
+    font-size: 24px;
+}
+
 body {
 background-color: cyan;
 }
+
+
+/* ===== PCサイズ（1025px以上） ===== */
+@media (min-width: 1025px) {
+    header h1 {
+        font-size: 28px;
+    }
+}
+
+/* ===== タブレットサイズ（601px〜1024px） ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+/* ===== スマホサイズ（600px以下） ===== */
+@media (max-width: 600px) {
+    header {
+        padding: 8px 15px;
+    }
+    header h1 {
+        font-size: 18px;
+    }
+}
+
 </style>
+
+
 </head>
 <body>
+    <header>
+        <h1>ユキページ</h1>
+    </header>
+
 <center>
 <h1>こんにちは<br></h1>
 <h2>私の名前は雪美</h2>
